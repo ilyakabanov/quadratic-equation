@@ -1,9 +1,9 @@
 module.exports = function solveEquation(equation) {
-  let equationArr = equation.replace(/(\s|x\^2)/g, '').match(/(-|)\d+/g);;
+  const equationArr = equation.replace(/(\s|x\^2)/g, '').match(/(-|)\d+/g);
 
-  let a = Number(equationArr[0]);
-  let b = Number(equationArr[1]);
-  let c = Number(equationArr[2]);
+  const a = Number(equationArr[0]);
+  const b = Number(equationArr[1]);
+  const c = Number(equationArr[2]);
   let d, x1, x2;
 
   d = b * b - 4 * a * c;
