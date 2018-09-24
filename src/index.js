@@ -1,5 +1,5 @@
 module.exports = function solveEquation(equation) {
-  let equationArr = equation.replace(/(\s|x\^2)/g, '').match(/(-|)\d+/g);;
+  let equationArr = equation.replace(/(\s|x\^2)/g, '').match(/(-|)\d+/g);
 
   let a = Number(equationArr[0]);
   let b = Number(equationArr[1]);
